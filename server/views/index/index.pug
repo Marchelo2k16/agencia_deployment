@@ -1,0 +1,33 @@
+extends ../layout/index
+block slider
+    .slider 
+       h1 Rio de Janeiro
+       em Aventura
+
+
+
+block contenido
+    main.container
+      h2.text-center.mb-5 Sobre Nosotros
+      .row.mb-5
+         .col-md-6
+             p Praesent tincidunt ante at justo semper volutpat. Sed risus neque, scelerisque id dictum in, placerat non erat. Sed eget tellus eu mauris faucibus pharetra. Praesent vulputate diam ac diam dignissim, eu semper turpis gravida. Vestibulum tempor purus orci, vitae ullamcorper erat congue quis.
+             p dapibus dui a velit lacinia, eu cursus massa cursus. Morbi lobortis fermentum urna, quis tincidunt justo varius vitae. In justo nisl, auctor vel eros sed, tempus efficitur lacus. Maecenas volutpat pharetra dolor, nec rutrum ipsum dapibus id. 
+         .col-md-6
+             img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+      h2.text-center.mb-5 Proximos Viajes
+      include ../layout/parcials/viajes 
+
+    .descuento
+       .container
+          .row
+              .col-md-6
+                 .contenido
+                    h3 5% de descuento
+                    p.titulo Viaje a Canada
+                    p.fecha 20-marzo-2020 a 30-marzo-2020
+                    p.precio $2500
+    .container  
+       h2.text-center.mb-5 Testimoniales
+       include ../layout/parcials/Testimoniales
